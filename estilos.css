@@ -1,21 +1,29 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 a
-{
-	color:#DD4F24; 
+{	
+	color: white;
+	text-decoration: none;
 }
 body
 {
-	background: #EFEFEF;
-	color: #4C4C4C;
-	font-family: "PT Sans", Arial;
+	background:#EFEFEF;
+	font-family: Dosis,'sans serif';
 	font-size: 16px;
-	margin: 0;
 }
 header
 {
 	background: #434343;
 	color: white;
 	padding: 0.5em;
-	text-align: left;
 }
 header figure, header h1
 {
@@ -26,25 +34,34 @@ header h1
 {
 	font-size: 20px;
 	font-weight: normal;
-	margin: 1em 0 0 1em;
-	width: 60%;
+	margin:0.8em 0 0 1em; 
+	width: 70%;
 }
 header #avatar
 {	
-	margin: 1em 1em 0 0;
 	float: right;
+	margin: 1em 1em 0 0;
 }
 header #avatar figcaption
 {
-	background: #22BCE0;
-	display: inline-block;
+	
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	line-height: 50px;
+
+}
+header #avatar figcaption a
+{	
+	background: #22BCE0;
+	padding: 0 0.2em;
+}
+header #avatar figcaption a:after
+{
+	content: "\e000";
+	font-family: icomoon;
 }
 header #avatar img
-{
-	float: left;
+{	float: left;
 	width: 50px;
 }
 header #logo img
@@ -52,89 +69,60 @@ header #logo img
 	width: 80px;
 }
 nav
-{
-	background: #878787;
-	color: white;
-	font-size: 0.9em;
+{	
+	font-size: 1em;
+	position: relative;
 }
-nav ul
-{
+nav ul 
+{	
+	background: #838383;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-nav ul li
-{
+nav ul li 
+{	
 	display: inline-block;
-	margin: 0 1.2em 0 0;
-	vertical-align: top;	
+	margin: 0 2em 0 0;
+	vertical-align: top;
 }
 nav ul li a
-{
-	color: white;
+{	
 	display: block;
 	padding: 0.5em 0;
 }
-nav #flechita_nav
-{
+nav ul #flecha_nav a
+{	
 	background: #22BCE0;
+	padding-left: 0.3em;
+	padding-right:0.3em;
 }
-nav #flechita_nav a 
+nav ul #publicar_nav 
 {
-	padding: 0.5em 0.5em;
-	text-decoration: none;
+	float: right;
+	margin: 0;
 }
-nav #publicar_nav
+nav ul #publicar_nav a
 {
 	background: #DD4F24;
-	float:right;
-	margin-right: 0;
-}
-nav #publicar_nav a
-{
 	padding: 0.5em 1em;
-	text-decoration: none;
 }
-#contenido
-{
-	margin: 1em;
-}
-#contenido .datos_item .tag_item
+nav #home
 {
 	background: #22BCE0;
-	border-radius: 0.5em;
+	border-radius: 0.3em 0.3em 0 0;
 	color: white;
-	padding: 0.2em 0.5em;
-	text-decoration: none; 
+	margin:0;
+	padding: 0.2em 0.2em 0.2em 1em;
+	position: absolute;
+	top: -72%;
+	left: 70%;
 }
-#contenido .item
+nav #home a
 {
-	border-bottom: 3px #22BCE0 solid;
-	background: white;
+	padding: 0 0.5em 0 1.7em;
 }
-#contenido .item p
-{
-	color: #7A7A7A;
-	font-size: 0.9em;
-}
-#contenido .item .imagen_item
-{
-	float: left;
-	margin: 0 0.5em 0 0;
-}
-#contenido .item .imagen_item img
+#contenido .post .imagen_post img
 {
 	width: 96px;
-}
-#contenido .item .titulo_item 
-{
-	font-size: 1rem;
-	margin: 0.5em 0 0.5em 0;
-	padding: 0.5em;
-}
-
-#contenido .item .titulo_item a
-{
-	color:#444;
-	text-decoration: none;
 }
